@@ -30,6 +30,17 @@ public class PersonController {
 
 }
 	
+		@RequestMapping("/Finland")
+	public String Finland ()
+	{
+	
+	return "Finland.jsp";
+
+}
+
+	
+	
+	
 	@RequestMapping("/getPerson")
 	public ModelAndView getPerson (@RequestParam Integer personId)
 	{
