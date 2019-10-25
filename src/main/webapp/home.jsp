@@ -19,14 +19,13 @@
 
 <form action="getPerson">
 <input type="text" name="personId"> <br>
-<input type="submit">  <br>
-</form>
-<br>
-<br>
+  <button type="submit"> Check user </button><br>  <br>
+</form> <br>  <br>
+
 
 
 <form action="Finland">
-  <button type="submit">Submit</button><br>  <br>
+  <button type="submit">Go to Finland page</button><br>  <br>
 </form>
 
 
