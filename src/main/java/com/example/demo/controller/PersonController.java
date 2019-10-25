@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +18,8 @@ public class PersonController {
 	@Autowired
 	PersonRepo repo;
 	
+
+	
 	@RequestMapping("/")
 	public String home () {
 		
@@ -29,6 +33,27 @@ public class PersonController {
 	return "home.jsp";
 
 }
+	
+	
+	@RequestMapping("/Finland")
+	public String Finland ()
+	{
+	
+	return "Finland.jsp";
+
+}
+	// Showeveryone
+	@RequestMapping( "/ShowEveryoneInDB.jsp")
+	public ModelAndView ShowEveryoneInDB() {
+		ModelAndView mv2 = new ModelAndView ("showPerson.jsp");
+	
+	   List<Person> person = (List<Person>) repo.findAll();
+		return new ModelAndView("personId", "personName", getPerson(null));
+
+
+	}
+	
+	
 	
 	@RequestMapping("/getPerson")
 	public ModelAndView getPerson (@RequestParam Integer personId)
