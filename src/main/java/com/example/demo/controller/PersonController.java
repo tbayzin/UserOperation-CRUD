@@ -18,7 +18,6 @@ public class PersonController {
 	@Autowired
 	PersonRepo repo;
 	
-
 	
 	@RequestMapping("/")
 	public String home () {
@@ -47,21 +46,7 @@ public class PersonController {
 
 }
 
-	// Showeveryone
-	@RequestMapping( "/ShowEveryoneInDB.jsp")
-	public ModelAndView ShowEveryoneInDB() {
-		ModelAndView mv2 = new ModelAndView ("showPerson.jsp");
-	
-	   List<Person> person = (List<Person>) repo.findAll();
-		return new ModelAndView("personId", "personName", getPerson(null));
 
-
-	}
-
-
-
-	
-	
 	
 	@RequestMapping("/getPerson")
 	public ModelAndView getPerson (@RequestParam Integer personId)
