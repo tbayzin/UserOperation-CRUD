@@ -25,18 +25,13 @@
 
 
 <form action="Finland">
-<<<<<<< HEAD
+
 	
   <button type="submit"> Go to Finland page</button><br>  <br>
-=======
-  <button type="submit">Go to Finland page</button><br>  <br>
->>>>>>> 2afa64361b1891b714f181b213a140457dd81949
+
+
+
 </form>
-
-
- </form>
- 
-<p> For check everyone in Db <a href="http://localhost:8080/ShowEveryoneInDB.jsp"> Click Here</a><br />
 
 
 </body>
