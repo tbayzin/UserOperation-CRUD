@@ -34,19 +34,19 @@ public class PersonController {
 
 }
 	
-<<<<<<< HEAD
+
 	
 	@RequestMapping("/Finland")
-=======
+
 		@RequestMapping("/Finland")
->>>>>>> 2afa64361b1891b714f181b213a140457dd81949
+
 	public String Finland ()
 	{
 	
 	return "Finland.jsp";
 
 }
-<<<<<<< HEAD
+
 	// Showeveryone
 	@RequestMapping( "/ShowEveryoneInDB.jsp")
 	public ModelAndView ShowEveryoneInDB() {
@@ -57,9 +57,9 @@ public class PersonController {
 
 
 	}
-=======
 
->>>>>>> 2afa64361b1891b714f181b213a140457dd81949
+
+
 	
 	
 	
