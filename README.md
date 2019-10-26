@@ -1,4 +1,4 @@
-User Operation for Mavidev
+ Basic User Operation task. Very simple user registration and check by ID.
  <h3> Technologies-Tools Used; </h3>   <br>
   Java 8 <br>
   Spring boot 2.2.0 <br>
