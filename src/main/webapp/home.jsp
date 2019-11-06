@@ -12,7 +12,7 @@
  </center ><form action="addPerson">
 <center> <input type="text" name="personId"> <br> <center>
 <input type="text" name="personName"> <br> 
-<input type="submit">  <br>  <br>  <br>
+<input type="submit">  <br>  <br>  <br> <br> <br>  <br> <br> 
 
 
 </form>
