@@ -9,10 +9,10 @@
 <body>
 
 
- </center><form action="addPerson">
+ </center ><form action="addPerson">
 <center> <input type="text" name="personId"> <br> <center>
 <input type="text" name="personName"> <br>
-<input type="submit">  <br>  
+<input type="submit">  <br>  <br>
 
 
 </form>
