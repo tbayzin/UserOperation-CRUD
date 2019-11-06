@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -34,35 +35,17 @@ public class PersonController {
 
 }
 	
-<<<<<<< HEAD
 	
 	@RequestMapping("/Finland")
-=======
-		@RequestMapping("/Finland")
->>>>>>> 2afa64361b1891b714f181b213a140457dd81949
 	public String Finland ()
 	{
 	
 	return "Finland.jsp";
 
 }
-<<<<<<< HEAD
-	// Showeveryone
-	@RequestMapping( "/ShowEveryoneInDB.jsp")
-	public ModelAndView ShowEveryoneInDB() {
-		ModelAndView mv2 = new ModelAndView ("showPerson.jsp");
-	
-	   List<Person> person = (List<Person>) repo.findAll();
-		return new ModelAndView("personId", "personName", getPerson(null));
 
+	
 
-	}
-=======
-
->>>>>>> 2afa64361b1891b714f181b213a140457dd81949
-	
-	
-	
 	@RequestMapping("/getPerson")
 	public ModelAndView getPerson (@RequestParam Integer personId)
 	{
