@@ -49,6 +49,7 @@ public class PersonController {
 	@RequestMapping("/getPerson")
 	public ModelAndView getPerson (@RequestParam Integer personId)
 	{
+		
 		ModelAndView mv = new ModelAndView ("showPerson.jsp");
 	     Person person = repo.findById(personId).orElse(new Person());
 	     mv.addObject(person);
