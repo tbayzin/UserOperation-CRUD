@@ -30,7 +30,7 @@ public class Person {
 	@Override
 	public String toString() {
 		
-		return "Kisinin ID si:  " + personId +  ",   Kisinin ismi: " + personName  ;
+		return "ID of the person:  " + personId +  ",   Name of the person: " + personName  ;
 		
 	}
 

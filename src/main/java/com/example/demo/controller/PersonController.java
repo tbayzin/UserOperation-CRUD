@@ -36,20 +36,10 @@ public class PersonController {
 }
 	
 	
-	@RequestMapping("/Finland")
-	public String Finland ()
-	{
-	
-	return "Finland.jsp";
-
-}
-
-	
 
 	@RequestMapping("/getPerson")
 	public ModelAndView getPerson (@RequestParam Integer personId)
 	{
-		
 		ModelAndView mv = new ModelAndView ("showPerson.jsp");
 	     Person person = repo.findById(personId).orElse(new Person());
 	     mv.addObject(person);
@@ -57,5 +47,26 @@ public class PersonController {
 
 }
 	
+
+/*	
+	@RequestMapping("/deletePerson")
+	public ModelAndView deletePerson (@RequestParam Integer personId) {
+		ModelAndView mView = new ModelAndView("deletedPerson.jsp");
+		Person person = repo.findById(personId);
+		mView.clear(person);
+		
+		
+	}
+	*/
+	
+	
+	@RequestMapping("/Finland")
+	public String Finland ()
+	{
+
+	return "Finland.jsp";
+
+}
+
 	
 }
