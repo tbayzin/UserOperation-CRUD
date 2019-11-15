@@ -29,32 +29,20 @@
 
 
 
-<form action="updatePerson">
-<input type="text" name="personId"    placeholder="UserID Number"> <br>
-  <button type="submit"> Delete user </button><br>    Write the number of the user for deleting
-</form> <br>  <br> 
-
-
-
-
-<form action="deletePerson">
+// DELETE
+<form action="deletedPerson" method="post" >
 <input type="text" name="personId"    placeholder="UserID Number"> <br>
   <button type="submit"> Delete user </button><br>   Write the number of the user for deleting
 </form> <br>  <br> 
 
 
+<!--
+<form action="updatePerson">
+<input type="text" name="personId"    placeholder="UserID Number"> <br>
+  <button type="submit"> Delete user </button><br>    Write the number of the user for deleting
+</form> <br>  <br> 
+--> 
 
-
-
-<form action="Finland">
-
-	
-  <button type="submit"> Go to Finland page</button><br>  <br>
-
-
-
-
-</form>
 
 
  </form>

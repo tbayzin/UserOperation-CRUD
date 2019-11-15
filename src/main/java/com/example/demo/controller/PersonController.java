@@ -2,8 +2,12 @@ package com.example.demo.controller;
 
 import java.util.List;
 
+import javax.persistence.Id;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,6 +22,7 @@ public class PersonController {
 	
 	@Autowired
 	PersonRepo repo;
+	
 	
 
 	
@@ -48,17 +53,27 @@ public class PersonController {
 }
 	
 
-/*	
-	@RequestMapping("/deletePerson")
-	public ModelAndView deletePerson (@RequestParam Integer personId) {
-		ModelAndView mView = new ModelAndView("deletedPerson.jsp");
-		Person person = repo.findById(personId);
-		mView.clear(person);
-		
-		
-	}
-	*/
 	
+	@RequestMapping(value = "/deletedPerson", method = RequestMethod.POST)
+	public String deletedPerson (@RequestParam Integer personId) {
+		
+		
+		repo.deleteById(personId);
+		return "/home.jsp";
+	}
+	
+		/*
+		ModelAndView mView = new ModelAndView("deletedPerson.jsp");
+		repo.deleteById(personId);
+	
+        return mView;
+        }
+        */
+	
+	
+	
+	
+
 	
 	@RequestMapping("/Finland")
 	public String Finland ()

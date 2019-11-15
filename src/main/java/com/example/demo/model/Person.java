@@ -29,9 +29,11 @@ public class Person {
 	
 	@Override
 	public String toString() {
-		
+		if (personId==0) {
+			return "User with this ID is not exist";
+		} else {
 		return "ID of the person:  " + personId +  ",   Name of the person: " + personName  ;
-		
+		}
 	}
 
 }
