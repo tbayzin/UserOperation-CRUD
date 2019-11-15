@@ -62,26 +62,7 @@ public class PersonController {
 		return "/home.jsp";
 	}
 	
-		/*
-		ModelAndView mView = new ModelAndView("deletedPerson.jsp");
-		repo.deleteById(personId);
 	
-        return mView;
-        }
-        */
-	
-	
-	
-	
-
-	
-	@RequestMapping("/Finland")
-	public String Finland ()
-	{
-
-	return "Finland.jsp";
-
-}
 
 	
 }
