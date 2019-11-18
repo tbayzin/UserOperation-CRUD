@@ -69,19 +69,7 @@ public class PersonController {
         return mView;
         }
         */
-	
-	
-	
-	
 
-	
-	@RequestMapping("/Finland")
-	public String Finland ()
-	{
-
-	return "Finland.jsp";
-
-}
 
 	
 }
