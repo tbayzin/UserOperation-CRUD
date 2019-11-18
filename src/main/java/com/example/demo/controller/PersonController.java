@@ -62,14 +62,14 @@ public class PersonController {
 		return "/home.jsp";
 	}
 	
-		/*
-		ModelAndView mView = new ModelAndView("deletedPerson.jsp");
-		repo.deleteById(personId);
-	
-        return mView;
-        }
-        */
+
+
 
 
 	
 }
+
+	
+
+	
+
