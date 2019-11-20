@@ -28,7 +28,7 @@
 
 
 
-// DELETE
+ DELETE
 <form action="deletedPerson" method="post" >
 <input type="text" name="personId"    placeholder="UserID Number"> <br>
   <button type="submit"> Delete user </button><br>   Write the number of the user for deleting
