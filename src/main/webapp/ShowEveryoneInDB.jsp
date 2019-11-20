@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<body style="background-color:#ede5f0;">
 ${person}
 
 </body>

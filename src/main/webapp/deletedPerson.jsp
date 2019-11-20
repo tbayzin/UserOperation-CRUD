@@ -6,6 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
+<body style="background-color:#ede5f0;">
 <body>
 ${person}
 </body>

@@ -4,13 +4,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>User Operation Page</title> 
 </head>
 <body>
-
+<body style="background-color:#feb236;">
 
  </center ><form action="addPerson"> 
- 
 <center>
 
  <input type="text" name="personId"  placeholder="UserID Number"> <br>

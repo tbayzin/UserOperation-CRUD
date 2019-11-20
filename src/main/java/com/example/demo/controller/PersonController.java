@@ -62,11 +62,6 @@ public class PersonController {
 		return "/home.jsp";
 	}
 	
-
-
-
-
-	
 }
 
 	
